@@ -91,18 +91,21 @@ Car.prototype.fill = function (gallons) {
     - Besides the methods on Person.prototype, babies have the ability to `.play()`:
         + Should return a string "Playing with x", x being the favorite toy.
 */
-function Baby() {
 
+function Baby(name, age,) {
+  Person.call(this, name, age);
+  this.favoriteToy = 'trains';
+  Baby.prototype = Object.create(Person.prototype);
+  Baby.prototype.play = () => `Playing with ${this.favoriteToy}`;
 }
-
 
 /* 
   TASK 4
   In your own words explain the four principles for the "this" keyword below:
-  1. 
-  2. 
-  3. 
-  4. 
+  1. It is a pronoun and, as such, is contextual.
+  2. It will refer to the window or console object if used in a global context.
+  3. It refers to the current object.
+  4. It can be explicitly or implicitly bound.
 */
 
 
