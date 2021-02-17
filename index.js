@@ -92,7 +92,7 @@ Car.prototype.fill = function (gallons) {
         + Should return a string "Playing with x", x being the favorite toy.
 */
 
-function Baby(name, age,) {
+function Baby(name, age) {
   Person.call(this, name, age);
   this.favoriteToy = 'trains';
   Baby.prototype = Object.create(Person.prototype);
@@ -103,10 +103,10 @@ function Baby(name, age,) {
   TASK 4
   In your own words explain the four principles for the "this" keyword below:
    - It is a pronoun and, as such, is contextual. Refers to the object it belongs to.
-  1. bind() It can be used to set the context of 'this' to a specified object when a function is invoked.
-  2. call() or apply() methods.
-  3. Object's method (you can create an object of a function using new keyword)
-  4. Global scope
+  1. Implicit binding() It can be used to set the context to a specified object when a function is invoked.
+  2. Explicit binding using: call() or apply() methods.
+  3. New binding - Object's method (you can create an object of a function using new keyword)
+  4. Global binding - global scope - window
 */
 
 
