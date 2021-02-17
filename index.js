@@ -102,10 +102,11 @@ function Baby(name, age,) {
 /* 
   TASK 4
   In your own words explain the four principles for the "this" keyword below:
-  1. It is a pronoun and, as such, is contextual.
-  2. It will refer to the window or console object if used in a global context.
-  3. It refers to the current object.
-  4. It can be explicitly or implicitly bound.
+   - It is a pronoun and, as such, is contextual. Refers to the object it belongs to.
+  1. bind() It can be used to set the context of 'this' to a specified object when a function is invoked.
+  2. call() or apply() methods.
+  3. Object's method (you can create an object of a function using new keyword)
+  4. Global scope
 */
 
 
